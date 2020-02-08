@@ -1,0 +1,780 @@
+                                        @font-face {
+                                            font-family: "Raleway-Regular";
+                                            src: url("../fonts/raleway/Raleway-Regular.ttf")format("truetype");
+                                            font-style: normal;
+                                            font-weight: normal;
+                                        }
+                                        
+                                        @font-face {
+                                            font-family: "Montserrat";
+                                            src: url("../fonts/montserrat/Montserrat-Regular.ttf")format("truetype");
+                                            font-style: normal;
+                                            font-weight: normal;
+                                        }
+                                        
+                                        body {
+                                            margin: 0 auto;
+                                        }
+                                        
+                                        .container {
+                                            width: 1920px;
+                                            margin: 0 auto;
+                                            border: 1px solid black;
+                                        }
+                                        
+                                        .main-header {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            background-image: url(../img/photo_11982.jpg);
+                                            min-height: 600px;
+                                            width: 1920px;
+                                            background-repeat: no-repeat;
+                                        }
+                                        
+                                        .header-section {
+                                            width: 1920px;
+                                            min-height: 300px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding: 30px;
+                                            padding-bottom: 5px;
+                                        }
+                                        
+                                        .header-width {
+                                            width: 100%;
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: center;
+                                        }
+                                        
+                                        .logo-name {
+                                            width: 115px;
+                                            height: 26px;
+                                            font-family: Raleway-Regular;
+                                            font-size: 34px;
+                                            line-height: 1.2;
+                                            font-weight: 200;
+                                            letter-spacing: -0.04em;
+                                            color: #ffffff;
+                                            text-decoration: none;
+                                        }
+                                        
+                                        .logo {
+                                            fill: currentColor;
+                                        }
+                                        
+                                        .logo-link {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            height: 30px;
+                                            text-decoration: none;
+                                            color: #fff;
+                                        }
+                                        
+                                        .logo-link:hover {
+                                            color: #998675
+                                        }
+                                        
+                                        .logo-name:hover {
+                                            color: #998675
+                                        }
+                                        
+                                        .header-nav {
+                                            display: flex;
+                                            height: 200px;
+                                        }
+                                        
+                                        .header-list {
+                                            display: flex;
+                                            margin-left: 219px;
+                                            padding-left: 0px;
+                                        }
+                                        
+                                        .header-list-item {
+                                            min-width: 20px;
+                                            height: 10px;
+                                            font-family: Montserrat;
+                                            font-size: 14px;
+                                            line-height: 1.2;
+                                            font-weight: 300;
+                                            list-style-type: none;
+                                            margin-right: 30px;
+                                        }
+                                        
+                                        .margin-item {
+                                            margin-right: 0px
+                                        }
+                                        
+                                        .header-list-item a {
+                                            text-decoration: none;
+                                            color: #ffffff;
+                                        }
+                                        
+                                        .header-list-item a:hover {
+                                            color: #c7b299;
+                                        }
+                                        
+                                        .header-list-item a:active {
+                                            color: snow;
+                                        }
+                                        
+                                        .cart {
+                                            margin: 12px 0 0 40px;
+                                        }
+                                        
+                                        input[type="search"] {
+                                            width: 30px;
+                                            height: 30px;
+                                            outline: none;
+                                            background-image: url('https://cdn.icon-icons.com/icons2/1143/PNG/512/searchmagnifieroutline_80737.png');
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+                                            border: none;
+                                            background-color: transparent;
+                                            margin: 10px 0 0 20px;
+                                            font-family: Montserrat;
+                                            font-size: 14px;
+                                            line-height: 1.2;
+                                            color: white;
+                                        }
+                                        
+                                        input[type="search"]:focus {
+                                            width: 300px;
+                                            transition: width 1s ease-out;
+                                            background-position: right;
+                                        }
+                                        
+                                        .main-header-inf {
+                                            display: flex;
+                                            clear: both;
+                                            flex-direction: row;
+                                            color: #545454
+                                        }
+                                        
+                                        .heade-button-link {}
+                                        
+                                        .slider-arrow-left,
+                                        .slider-arrow-right {
+                                            display: block;
+                                            width: 40px;
+                                            height: 73px;
+                                            position: relative;
+                                        }
+                                        
+                                        .slider-arrow-left:after {
+                                            content: "";
+                                            display: inline-block;
+                                            width: 52px;
+                                            height: 52px;
+                                            border-top: 2px solid #d3c1ad;
+                                            border-left: 2px solid #d3c1ad;
+                                            transform: rotate(-45deg);
+                                            position: absolute;
+                                            top: 226px;
+                                            left: 40px;
+                                        }
+                                        
+                                        .slider-arrow-right:after {
+                                            content: "";
+                                            display: inline-block;
+                                            width: 52px;
+                                            height: 52px;
+                                            border-top: 2px solid #d3c1ad;
+                                            border-left: 2px solid #d3c1ad;
+                                            transform: rotate(135deg);
+                                            position: absolute;
+                                            top: 226px;
+                                            left: 455px;
+                                        }
+                                        
+                                        .slider-arrow-left:hover:after {
+                                            border-top: 2px solid orange;
+                                            border-left: 2px solid orange;
+                                        }
+                                        
+                                        .slider-arrow-right:hover:after {
+                                            border-top: 2px solid orange;
+                                            border-left: 2px solid orange;
+                                        }
+                                        
+                                        .header-text {
+                                            width: 700px;
+                                            min-height: 300px;
+                                            margin: 130px 0 0 564px;
+                                        }
+                                        
+                                        .header-text-modern {
+                                            display: block;
+                                            width: 100%;
+                                            text-align: center;
+                                            height: 34px;
+                                            font-family: Raleway-Regular;
+                                            font-size: 36px;
+                                            line-height: 1.2;
+                                            font-weight: 300;
+                                            color: #ffffff;
+                                            margin-bottom: 15px
+                                        }
+                                        
+                                        .portfolio-header-text {
+                                            display: block;
+                                            width: 100%;
+                                            text-align: center;
+                                            height: 50px;
+                                            font-family: Raleway-Regular;
+                                            font-size: 52px;
+                                            line-height: 1.2;
+                                            font-weight: 700;
+                                            color: #ffffff;
+                                            letter-spacing: 3px
+                                        }
+                                        
+                                        .text-h5 {
+                                            display: block;
+                                            width: 547px;
+                                            text-align: center;
+                                            height: 39px;
+                                            font-family: Montserrat;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            font-weight: 100;
+                                            color: #ffffff;
+                                            margin-top: 25px;
+                                            margin-left: 76px;
+                                            letter-spacing: 1px;
+                                        }
+                                        
+                                        .butn {
+                                            display: block;
+                                            width: 170px;
+                                            min-height: 11px;
+                                            font-family: Raleway-Regular;
+                                            font-size: 14px;
+                                            line-height: 23px;
+                                            font-weight: 800;
+                                            text-transform: uppercase;
+                                            color: #ffffff;
+                                            padding: 15px 10px;
+                                            box-sizing: border-box;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            background-color: #998675;
+                                            word-break: break-all;
+                                            border-radius: 5px;
+                                            margin: 57px 0 0 260px;
+                                        }
+                                        
+                                        .butn:hover {
+                                            background-color: antiquewhite;
+                                            color: black;
+                                        }
+                                        
+                                        .butn:active {
+                                            background-color: rgb(155, 120, 91);
+                                            color: white;
+                                        }
+                                        
+                                        .heade-button-link2 {
+                                            margin: 226px 0 0 352px;
+                                        }
+                                        
+                                        .header-slash {
+                                            width: 180px;
+                                            display: flex;
+                                            margin: 300px 0 51px 892px;
+                                            height: 10px;
+                                        }
+                                        
+                                        .slash-item {
+                                            display: block;
+                                            width: 11px;
+                                            height: 11px;
+                                            background-color: darkgray;
+                                            border-radius: 50%;
+                                            border: 1px solid transparent;
+                                            margin-right: 10px;
+                                        }
+                                        
+                                        .slash-item:hover {
+                                            background-color: transparent;
+                                            border: 2px solid #998675;
+                                            transform: scale(1.2);
+                                        }
+                                        
+                                        .web-app {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: center;
+                                            width: 1920px;
+                                            padding: 30px;
+                                            box-sizing: border-box;
+                                        }
+                                        
+                                        .app {
+                                            display: flex;
+                                            justify-content: center;
+                                            background-color: white;
+                                        }
+                                        
+                                        .pencil {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 260px;
+                                            height: 200px;
+                                            clear: both;
+                                            margin-right: 80px;
+                                        }
+                                        
+                                        .pencil:after {
+                                            content: "";
+                                            display: block;
+                                            width: 70px;
+                                            height: 3px;
+                                            background-color: #f1eee9;
+                                            margin: 0 auto;
+                                            align-self: flex-end;
+                                        }
+                                        
+                                        .pencil:hover:after {
+                                            background-color: #c7b299;
+                                            color: #c7b299;
+                                        }
+                                        
+                                        .pencil:hover span,
+                                        .pencil:hover svg {
+                                            color: #c7b299;
+                                            fill: #c7b299
+                                        }
+                                        
+                                        .pencil:hover p {
+                                            color: #8c8c8c;
+                                        }
+                                        
+                                        .pen {
+                                            fill: #555555;
+                                            width: 51px;
+                                            height: 51px;
+                                            margin: 0 0px 0 107px;
+                                        }
+                                        
+                                        .webapp {
+                                            display: block;
+                                            font-family: Raleway-Regular;
+                                            font-size: 22px;
+                                            line-height: 1.2;
+                                            font-weight: 600;
+                                            color: #555555;
+                                            margin: 15px 0px 15px 0px;
+                                            text-align: center;
+                                        }
+                                        
+                                        .webapp-text {
+                                            display: block;
+                                            font-family: Montserrat;
+                                            font-size: 14px;
+                                            line-height: 24px;
+                                            font-weight: 300;
+                                            color: #8c8c8c;
+                                            text-align: center;
+                                            height: 86px;
+                                            margin: 0;
+                                        }
+                                        
+                                        .waxom {
+                                            display: flex;
+                                            width: 1920px;
+                                            height: 740px;
+                                            background-color: #fbfaf8;
+                                            padding: 30px;
+                                            box-sizing: border-box;
+                                            flex-direction: column;
+                                        }
+                                        
+                                        .waxom-text,
+                                        .projects-text {
+                                            text-align: center;
+                                            width: 100%;
+                                            box-sizing: border-box;
+                                        }
+                                        
+                                        .waxom-title,
+                                        .projects-title {
+                                            font-family: Raleway-Regular;
+                                            font-size: 30px;
+                                            line-height: 1.2;
+                                            font-weight: 600;
+                                            color: #555555;
+                                            padding-top: 50px;
+                                            margin-bottom: 30px;
+                                            display: block;
+                                            text-align: center;
+                                        }
+                                        
+                                        .waxom-after-title,
+                                        .projects-after-title {
+                                            font-family: Montserrat;
+                                            font-size: 16px;
+                                            line-height: 28px;
+                                            font-weight: 300;
+                                            color: #8c8c8c;
+                                            display: block;
+                                            text-align: center;
+                                            width: 779px;
+                                            margin: 0px 0 0 542px;
+                                        }
+                                        
+                                        .three-img {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: center;
+                                            height: 730px;
+                                            width: 100%;
+                                        }
+                                        
+                                        .img-one {
+                                            position: absolute;
+                                            top: 1545px;
+                                        }
+                                        
+                                        .img-two {
+                                            position: absolute;
+                                            left: 347px;
+                                            top: 1627px;
+                                        }
+                                        
+                                        .img-three {
+                                            position: absolute;
+                                            left: 810px;
+                                            top: 1627px;
+                                        }
+                                        
+                                        .img-two:hover {
+                                            z-index: 1000;
+                                        }
+                                        
+                                        .img-three:hover {
+                                            z-index: 1000;
+                                        }
+                                        
+                                        .aside-menu {
+                                            display: flex;
+                                            flex-direction: row;
+                                            width: 1920px;
+                                            box-sizing: border-box;
+                                            min-height: 150px;
+                                            background: linear-gradient(to right, #211b19, #4d3326);
+                                        }
+                                        
+                                        .aside-list {
+                                            display: flex;
+                                            width: 30%;
+                                            margin: 48px 0 0 325px;
+                                        }
+                                        
+                                        .aside-list-item {
+                                            font-family: Raleway-Regular;
+                                            font-size: 28px;
+                                            line-height: 1.2;
+                                            font-weight: 400;
+                                            color: #ffffff;
+                                            padding-left: 10px;
+                                        }
+                                        
+                                        .aside-list-item-url {
+                                            text-decoration: none;
+                                            color: white;
+                                        }
+                                        
+                                        .aside-list-item-url:hover {
+                                            color: #c7b299;
+                                        }
+                                        
+                                        .aside-title-text {
+                                            display: block;
+                                            font-family: Montserrat;
+                                            font-size: 18px;
+                                            line-height: 1.2;
+                                            font-weight: 300;
+                                            color: #615855;
+                                            margin: 8px 0 0 375px;
+                                        }
+                                        
+                                        .butn-aside {
+                                            display: block;
+                                            width: 170px;
+                                            height: 50px;
+                                            font-family: Raleway-Regular;
+                                            font-size: 14px;
+                                            line-height: 23px;
+                                            font-weight: 800;
+                                            text-transform: uppercase;
+                                            color: #ffffff;
+                                            padding: 15px 10px;
+                                            box-sizing: border-box;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            background-color: #998675;
+                                            word-break: break-all;
+                                            border-radius: 5px;
+                                            margin: 57px 0 0 468px;
+                                        }
+                                        
+                                        .butn-aside:hover,
+                                        .butn-proj:hover {
+                                            background-color: aqua;
+                                            color: black;
+                                        }
+                                        
+                                        .butn-aside:active,
+                                        .butn-proj:active {
+                                            background-color: beige;
+                                            color: brown;
+                                        }
+                                        
+                                        .projects {
+                                            display: flex;
+                                            width: 1920px;
+                                            min-height: 740px;
+                                            padding: 30px;
+                                            box-sizing: border-box;
+                                            flex-direction: column;
+                                            box-sizing: border-box;
+                                        }
+                                        
+                                        .projects-buttons {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: center;
+                                            box-sizing: border-box;
+                                            margin: 40px 0 40px 0;
+                                        }
+                                        
+                                        .proj-btn {
+                                            font-family: Montserrat;
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                            font-weight: 300;
+                                            color: #8c8c8c;
+                                            width: 120px;
+                                            height: 32px;
+                                            border: 1.0px solid #ebebeb;
+                                            border-radius: 3.0px;
+                                            margin-right: 10px;
+                                        }
+                                        
+                                        .proj-btn:hover {
+                                            background-color: #998675;
+                                            color: white;
+                                        }
+                                        
+                                        .proj-btn:active {
+                                            background-color: #998675;
+                                            color: lawngreen;
+                                        }
+                                        
+                                        .project-images {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: center;
+                                        }
+                                        
+                                        .photo-text {
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding: 30px;
+                                        }
+                                        
+                                        .text-proj {
+                                            width: 370px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 370px;
+                                            height: 100px;
+                                            background-color: #fbfaf8;
+                                            margin-top: -5px;
+                                            box-sizing: border-box;
+                                            padding: 30px;
+                                        }
+                                        
+                                        .text-proj1 {
+                                            width: 370px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 370px;
+                                            height: 100px;
+                                            background-color: #fbfaf8;
+                                            margin-top: -5px;
+                                            box-sizing: border-box;
+                                            padding: 30px;
+                                        }
+                                        
+                                        .text-proj:before {
+                                            content: "";
+                                            display: block;
+                                            border: 16px solid transparent;
+                                            border-bottom: 16px solid white;
+                                            position: absolute;
+                                            top: 2725px;
+                                        }
+                                        
+                                        .text-proj1:before {
+                                            content: "";
+                                            display: block;
+                                            border: 16px solid transparent;
+                                            border-bottom: 16px solid white;
+                                            position: absolute;
+                                            top: 3121px;
+                                        }
+                                        
+                                        .text-proj-title {
+                                            font-family: Raleway-Regular;
+                                            font-size: 20px;
+                                            line-height: 1.2;
+                                            font-weight: 500;
+                                            color: #c7b299;
+                                        }
+                                        
+                                        .text-proj-text {
+                                            font-family: Montserrat;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            font-weight: 300;
+                                            color: #d1d1d1;
+                                        }
+                                        
+                                        .photo-text:hover .text-proj {
+                                            background-color: #362f2d;
+                                            color: #362f2d;
+                                        }
+                                        
+                                        .photo-text:hover .text-proj1 {
+                                            background-color: #362f2d;
+                                        }
+                                        
+                                        .photo-text:hover .text-proj-title {
+                                            color: white;
+                                        }
+                                        
+                                        .photo-text:hover .text-proj-text {
+                                            color: #c7b299;
+                                        }
+                                        
+                                        .photo-text:hover .text-proj:before {
+                                            border-bottom: 16px solid #362f2d;
+                                        }
+                                        
+                                        .photo-text:hover .text-proj1:before {
+                                            border-bottom: 16px solid #362f2d;
+                                        }
+                                        
+                                        .photo:hover:before {
+                                            content: "";
+                                            background-image: url('https://cdn.icon-icons.com/icons2/1580/PNG/512/2849800-chain-interface-link-linked-multimedia_107961.png');
+                                            background-size: 30px;
+                                            width: 30px;
+                                            height: 30px;
+                                            position: absolute;
+                                            display: block;
+                                            margin: 110px;
+                                        }
+                                        
+                                        .photo:hover:after {
+                                            content: '';
+                                            background-image: url('https://cdn.icon-icons.com/icons2/1143/PNG/512/searchmagnifieroutline_80737.png');
+                                            background-size: 30px;
+                                            width: 30px;
+                                            height: 30px;
+                                            position: absolute;
+                                            display: block;
+                                            margin: -225px 0 0 190px;
+                                        }
+                                        
+                                        .butn-proj {
+                                            display: block;
+                                            width: 170px;
+                                            height: 50px;
+                                            font-family: Raleway-Regular;
+                                            font-size: 14px;
+                                            line-height: 23px;
+                                            font-weight: 800;
+                                            text-transform: uppercase;
+                                            color: #ffffff;
+                                            padding: 15px 10px;
+                                            box-sizing: border-box;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            background-color: #998675;
+                                            word-break: break-all;
+                                            border-radius: 5px;
+                                            margin: 20px 0 0 848px;
+                                        }
+                                        
+                                        .video {
+                                            position: relative;
+                                            width: 1920px;
+                                            box-sizing: border-box;
+                                            height: 705px;
+                                        }
+                                        
+                                        .videotext {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 1920px;
+                                            min-height: 300px;
+                                            position: absolute;
+                                            top: 254px;
+                                            box-sizing: border-box;
+                                        }
+                                        
+                                        .video-button {
+                                            width: 100px;
+                                            height: 100px;
+                                            opacity: 0.2;
+                                            background-color: #000000;
+                                            border-radius: 50%;
+                                            text-align: center;
+                                            margin: -44px 0 0 914px;
+                                        }
+                                        
+                                        .video-button:before {
+                                            content: "";
+                                            background-image: url('https://www.markupeasy.ru/projects_p/20200130131950_vv/20200130132035688_Zachetnyi__maket_(2)/10993.png');
+                                            background-size: 70px;
+                                            width: 70px;
+                                            height: 70px;
+                                            display: block;
+                                            opacity: 1;
+                                            margin: -1px 0 0 6px;
+                                        }
+                                        
+                                        .title-video {
+                                            font-family: Raleway-Regular;
+                                            font-size: 30px;
+                                            line-height: 1.2;
+                                            font-weight: 500;
+                                            color: #ffffff;
+                                            text-align: center;
+                                            padding: 30px 0 20px 0;
+                                            letter-spacing: 1px;
+                                        }
+                                        
+                                        .text-video {
+                                            font-family: Montserrat;
+                                            font-size: 16px;
+                                            line-height: 28px;
+                                            font-weight: 300;
+                                            color: #ffffff;
+                                            text-align: center;
+                                            width: 577px;
+                                            margin: 0 0 30px 681px;
+                                        }
+                                        
+                                        .time-video {
+                                            font-family: Montserrat;
+                                            font-size: 14px;
+                                            line-height: 24px;
+                                            font-weight: 400;
+                                            color: #c7b299;
+                                            text-align: center;
+                                        }
