@@ -1,780 +1,1457 @@
-                                        @font-face {
-                                            font-family: "Raleway-Regular";
-                                            src: url("../fonts/raleway/Raleway-Regular.ttf")format("truetype");
-                                            font-style: normal;
-                                            font-weight: normal;
-                                        }
-                                        
-                                        @font-face {
-                                            font-family: "Montserrat";
-                                            src: url("../fonts/montserrat/Montserrat-Regular.ttf")format("truetype");
-                                            font-style: normal;
-                                            font-weight: normal;
-                                        }
-                                        
-                                        body {
-                                            margin: 0 auto;
-                                        }
-                                        
-                                        .container {
-                                            width: 1920px;
-                                            margin: 0 auto;
-                                            border: 1px solid black;
-                                        }
-                                        
-                                        .main-header {
-                                            display: flex;
-                                            flex-wrap: wrap;
-                                            background-image: url(../img/photo_11982.jpg);
-                                            min-height: 600px;
-                                            width: 1920px;
-                                            background-repeat: no-repeat;
-                                        }
-                                        
-                                        .header-section {
-                                            width: 1920px;
-                                            min-height: 300px;
-                                            display: flex;
-                                            flex-direction: column;
-                                            padding: 30px;
-                                            padding-bottom: 5px;
-                                        }
-                                        
-                                        .header-width {
-                                            width: 100%;
-                                            display: flex;
-                                            flex-direction: row;
-                                            justify-content: center;
-                                        }
-                                        
-                                        .logo-name {
-                                            width: 115px;
-                                            height: 26px;
-                                            font-family: Raleway-Regular;
-                                            font-size: 34px;
-                                            line-height: 1.2;
-                                            font-weight: 200;
-                                            letter-spacing: -0.04em;
-                                            color: #ffffff;
-                                            text-decoration: none;
-                                        }
-                                        
-                                        .logo {
-                                            fill: currentColor;
-                                        }
-                                        
-                                        .logo-link {
-                                            display: flex;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                            height: 30px;
-                                            text-decoration: none;
-                                            color: #fff;
-                                        }
-                                        
-                                        .logo-link:hover {
-                                            color: #998675
-                                        }
-                                        
-                                        .logo-name:hover {
-                                            color: #998675
-                                        }
-                                        
-                                        .header-nav {
-                                            display: flex;
-                                            height: 200px;
-                                        }
-                                        
-                                        .header-list {
-                                            display: flex;
-                                            margin-left: 219px;
-                                            padding-left: 0px;
-                                        }
-                                        
-                                        .header-list-item {
-                                            min-width: 20px;
-                                            height: 10px;
-                                            font-family: Montserrat;
-                                            font-size: 14px;
-                                            line-height: 1.2;
-                                            font-weight: 300;
-                                            list-style-type: none;
-                                            margin-right: 30px;
-                                        }
-                                        
-                                        .margin-item {
-                                            margin-right: 0px
-                                        }
-                                        
-                                        .header-list-item a {
-                                            text-decoration: none;
-                                            color: #ffffff;
-                                        }
-                                        
-                                        .header-list-item a:hover {
-                                            color: #c7b299;
-                                        }
-                                        
-                                        .header-list-item a:active {
-                                            color: snow;
-                                        }
-                                        
-                                        .cart {
-                                            margin: 12px 0 0 40px;
-                                        }
-                                        
-                                        input[type="search"] {
-                                            width: 30px;
-                                            height: 30px;
-                                            outline: none;
-                                            background-image: url('https://cdn.icon-icons.com/icons2/1143/PNG/512/searchmagnifieroutline_80737.png');
-                                            background-size: contain;
-                                            background-repeat: no-repeat;
-                                            border: none;
-                                            background-color: transparent;
-                                            margin: 10px 0 0 20px;
-                                            font-family: Montserrat;
-                                            font-size: 14px;
-                                            line-height: 1.2;
-                                            color: white;
-                                        }
-                                        
-                                        input[type="search"]:focus {
-                                            width: 300px;
-                                            transition: width 1s ease-out;
-                                            background-position: right;
-                                        }
-                                        
-                                        .main-header-inf {
-                                            display: flex;
-                                            clear: both;
-                                            flex-direction: row;
-                                            color: #545454
-                                        }
-                                        
-                                        .heade-button-link {}
-                                        
-                                        .slider-arrow-left,
-                                        .slider-arrow-right {
-                                            display: block;
-                                            width: 40px;
-                                            height: 73px;
-                                            position: relative;
-                                        }
-                                        
-                                        .slider-arrow-left:after {
-                                            content: "";
-                                            display: inline-block;
-                                            width: 52px;
-                                            height: 52px;
-                                            border-top: 2px solid #d3c1ad;
-                                            border-left: 2px solid #d3c1ad;
-                                            transform: rotate(-45deg);
-                                            position: absolute;
-                                            top: 226px;
-                                            left: 40px;
-                                        }
-                                        
-                                        .slider-arrow-right:after {
-                                            content: "";
-                                            display: inline-block;
-                                            width: 52px;
-                                            height: 52px;
-                                            border-top: 2px solid #d3c1ad;
-                                            border-left: 2px solid #d3c1ad;
-                                            transform: rotate(135deg);
-                                            position: absolute;
-                                            top: 226px;
-                                            left: 455px;
-                                        }
-                                        
-                                        .slider-arrow-left:hover:after {
-                                            border-top: 2px solid orange;
-                                            border-left: 2px solid orange;
-                                        }
-                                        
-                                        .slider-arrow-right:hover:after {
-                                            border-top: 2px solid orange;
-                                            border-left: 2px solid orange;
-                                        }
-                                        
-                                        .header-text {
-                                            width: 700px;
-                                            min-height: 300px;
-                                            margin: 130px 0 0 564px;
-                                        }
-                                        
-                                        .header-text-modern {
-                                            display: block;
-                                            width: 100%;
-                                            text-align: center;
-                                            height: 34px;
-                                            font-family: Raleway-Regular;
-                                            font-size: 36px;
-                                            line-height: 1.2;
-                                            font-weight: 300;
-                                            color: #ffffff;
-                                            margin-bottom: 15px
-                                        }
-                                        
-                                        .portfolio-header-text {
-                                            display: block;
-                                            width: 100%;
-                                            text-align: center;
-                                            height: 50px;
-                                            font-family: Raleway-Regular;
-                                            font-size: 52px;
-                                            line-height: 1.2;
-                                            font-weight: 700;
-                                            color: #ffffff;
-                                            letter-spacing: 3px
-                                        }
-                                        
-                                        .text-h5 {
-                                            display: block;
-                                            width: 547px;
-                                            text-align: center;
-                                            height: 39px;
-                                            font-family: Montserrat;
-                                            font-size: 16px;
-                                            line-height: 24px;
-                                            font-weight: 100;
-                                            color: #ffffff;
-                                            margin-top: 25px;
-                                            margin-left: 76px;
-                                            letter-spacing: 1px;
-                                        }
-                                        
-                                        .butn {
-                                            display: block;
-                                            width: 170px;
-                                            min-height: 11px;
-                                            font-family: Raleway-Regular;
-                                            font-size: 14px;
-                                            line-height: 23px;
-                                            font-weight: 800;
-                                            text-transform: uppercase;
-                                            color: #ffffff;
-                                            padding: 15px 10px;
-                                            box-sizing: border-box;
-                                            text-align: center;
-                                            text-decoration: none;
-                                            background-color: #998675;
-                                            word-break: break-all;
-                                            border-radius: 5px;
-                                            margin: 57px 0 0 260px;
-                                        }
-                                        
-                                        .butn:hover {
-                                            background-color: antiquewhite;
-                                            color: black;
-                                        }
-                                        
-                                        .butn:active {
-                                            background-color: rgb(155, 120, 91);
-                                            color: white;
-                                        }
-                                        
-                                        .heade-button-link2 {
-                                            margin: 226px 0 0 352px;
-                                        }
-                                        
-                                        .header-slash {
-                                            width: 180px;
-                                            display: flex;
-                                            margin: 300px 0 51px 892px;
-                                            height: 10px;
-                                        }
-                                        
-                                        .slash-item {
-                                            display: block;
-                                            width: 11px;
-                                            height: 11px;
-                                            background-color: darkgray;
-                                            border-radius: 50%;
-                                            border: 1px solid transparent;
-                                            margin-right: 10px;
-                                        }
-                                        
-                                        .slash-item:hover {
-                                            background-color: transparent;
-                                            border: 2px solid #998675;
-                                            transform: scale(1.2);
-                                        }
-                                        
-                                        .web-app {
-                                            display: flex;
-                                            flex-direction: row;
-                                            justify-content: center;
-                                            width: 1920px;
-                                            padding: 30px;
-                                            box-sizing: border-box;
-                                        }
-                                        
-                                        .app {
-                                            display: flex;
-                                            justify-content: center;
-                                            background-color: white;
-                                        }
-                                        
-                                        .pencil {
-                                            display: flex;
-                                            flex-direction: column;
-                                            width: 260px;
-                                            height: 200px;
-                                            clear: both;
-                                            margin-right: 80px;
-                                        }
-                                        
-                                        .pencil:after {
-                                            content: "";
-                                            display: block;
-                                            width: 70px;
-                                            height: 3px;
-                                            background-color: #f1eee9;
-                                            margin: 0 auto;
-                                            align-self: flex-end;
-                                        }
-                                        
-                                        .pencil:hover:after {
-                                            background-color: #c7b299;
-                                            color: #c7b299;
-                                        }
-                                        
-                                        .pencil:hover span,
-                                        .pencil:hover svg {
-                                            color: #c7b299;
-                                            fill: #c7b299
-                                        }
-                                        
-                                        .pencil:hover p {
-                                            color: #8c8c8c;
-                                        }
-                                        
-                                        .pen {
-                                            fill: #555555;
-                                            width: 51px;
-                                            height: 51px;
-                                            margin: 0 0px 0 107px;
-                                        }
-                                        
-                                        .webapp {
-                                            display: block;
-                                            font-family: Raleway-Regular;
-                                            font-size: 22px;
-                                            line-height: 1.2;
-                                            font-weight: 600;
-                                            color: #555555;
-                                            margin: 15px 0px 15px 0px;
-                                            text-align: center;
-                                        }
-                                        
-                                        .webapp-text {
-                                            display: block;
-                                            font-family: Montserrat;
-                                            font-size: 14px;
-                                            line-height: 24px;
-                                            font-weight: 300;
-                                            color: #8c8c8c;
-                                            text-align: center;
-                                            height: 86px;
-                                            margin: 0;
-                                        }
-                                        
-                                        .waxom {
-                                            display: flex;
-                                            width: 1920px;
-                                            height: 740px;
-                                            background-color: #fbfaf8;
-                                            padding: 30px;
-                                            box-sizing: border-box;
-                                            flex-direction: column;
-                                        }
-                                        
-                                        .waxom-text,
-                                        .projects-text {
-                                            text-align: center;
-                                            width: 100%;
-                                            box-sizing: border-box;
-                                        }
-                                        
-                                        .waxom-title,
-                                        .projects-title {
-                                            font-family: Raleway-Regular;
-                                            font-size: 30px;
-                                            line-height: 1.2;
-                                            font-weight: 600;
-                                            color: #555555;
-                                            padding-top: 50px;
-                                            margin-bottom: 30px;
-                                            display: block;
-                                            text-align: center;
-                                        }
-                                        
-                                        .waxom-after-title,
-                                        .projects-after-title {
-                                            font-family: Montserrat;
-                                            font-size: 16px;
-                                            line-height: 28px;
-                                            font-weight: 300;
-                                            color: #8c8c8c;
-                                            display: block;
-                                            text-align: center;
-                                            width: 779px;
-                                            margin: 0px 0 0 542px;
-                                        }
-                                        
-                                        .three-img {
-                                            display: flex;
-                                            flex-direction: row;
-                                            justify-content: center;
-                                            height: 730px;
-                                            width: 100%;
-                                        }
-                                        
-                                        .img-one {
-                                            position: absolute;
-                                            top: 1545px;
-                                        }
-                                        
-                                        .img-two {
-                                            position: absolute;
-                                            left: 347px;
-                                            top: 1627px;
-                                        }
-                                        
-                                        .img-three {
-                                            position: absolute;
-                                            left: 810px;
-                                            top: 1627px;
-                                        }
-                                        
-                                        .img-two:hover {
-                                            z-index: 1000;
-                                        }
-                                        
-                                        .img-three:hover {
-                                            z-index: 1000;
-                                        }
-                                        
-                                        .aside-menu {
-                                            display: flex;
-                                            flex-direction: row;
-                                            width: 1920px;
-                                            box-sizing: border-box;
-                                            min-height: 150px;
-                                            background: linear-gradient(to right, #211b19, #4d3326);
-                                        }
-                                        
-                                        .aside-list {
-                                            display: flex;
-                                            width: 30%;
-                                            margin: 48px 0 0 325px;
-                                        }
-                                        
-                                        .aside-list-item {
-                                            font-family: Raleway-Regular;
-                                            font-size: 28px;
-                                            line-height: 1.2;
-                                            font-weight: 400;
-                                            color: #ffffff;
-                                            padding-left: 10px;
-                                        }
-                                        
-                                        .aside-list-item-url {
-                                            text-decoration: none;
-                                            color: white;
-                                        }
-                                        
-                                        .aside-list-item-url:hover {
-                                            color: #c7b299;
-                                        }
-                                        
-                                        .aside-title-text {
-                                            display: block;
-                                            font-family: Montserrat;
-                                            font-size: 18px;
-                                            line-height: 1.2;
-                                            font-weight: 300;
-                                            color: #615855;
-                                            margin: 8px 0 0 375px;
-                                        }
-                                        
-                                        .butn-aside {
-                                            display: block;
-                                            width: 170px;
-                                            height: 50px;
-                                            font-family: Raleway-Regular;
-                                            font-size: 14px;
-                                            line-height: 23px;
-                                            font-weight: 800;
-                                            text-transform: uppercase;
-                                            color: #ffffff;
-                                            padding: 15px 10px;
-                                            box-sizing: border-box;
-                                            text-align: center;
-                                            text-decoration: none;
-                                            background-color: #998675;
-                                            word-break: break-all;
-                                            border-radius: 5px;
-                                            margin: 57px 0 0 468px;
-                                        }
-                                        
-                                        .butn-aside:hover,
-                                        .butn-proj:hover {
-                                            background-color: aqua;
-                                            color: black;
-                                        }
-                                        
-                                        .butn-aside:active,
-                                        .butn-proj:active {
-                                            background-color: beige;
-                                            color: brown;
-                                        }
-                                        
-                                        .projects {
-                                            display: flex;
-                                            width: 1920px;
-                                            min-height: 740px;
-                                            padding: 30px;
-                                            box-sizing: border-box;
-                                            flex-direction: column;
-                                            box-sizing: border-box;
-                                        }
-                                        
-                                        .projects-buttons {
-                                            display: flex;
-                                            flex-direction: row;
-                                            justify-content: center;
-                                            box-sizing: border-box;
-                                            margin: 40px 0 40px 0;
-                                        }
-                                        
-                                        .proj-btn {
-                                            font-family: Montserrat;
-                                            font-size: 14px;
-                                            line-height: 21px;
-                                            font-weight: 300;
-                                            color: #8c8c8c;
-                                            width: 120px;
-                                            height: 32px;
-                                            border: 1.0px solid #ebebeb;
-                                            border-radius: 3.0px;
-                                            margin-right: 10px;
-                                        }
-                                        
-                                        .proj-btn:hover {
-                                            background-color: #998675;
-                                            color: white;
-                                        }
-                                        
-                                        .proj-btn:active {
-                                            background-color: #998675;
-                                            color: lawngreen;
-                                        }
-                                        
-                                        .project-images {
-                                            display: flex;
-                                            flex-direction: row;
-                                            justify-content: center;
-                                        }
-                                        
-                                        .photo-text {
-                                            display: flex;
-                                            flex-direction: column;
-                                            padding: 30px;
-                                        }
-                                        
-                                        .text-proj {
-                                            width: 370px;
-                                            display: flex;
-                                            flex-direction: column;
-                                            width: 370px;
-                                            height: 100px;
-                                            background-color: #fbfaf8;
-                                            margin-top: -5px;
-                                            box-sizing: border-box;
-                                            padding: 30px;
-                                        }
-                                        
-                                        .text-proj1 {
-                                            width: 370px;
-                                            display: flex;
-                                            flex-direction: column;
-                                            width: 370px;
-                                            height: 100px;
-                                            background-color: #fbfaf8;
-                                            margin-top: -5px;
-                                            box-sizing: border-box;
-                                            padding: 30px;
-                                        }
-                                        
-                                        .text-proj:before {
-                                            content: "";
-                                            display: block;
-                                            border: 16px solid transparent;
-                                            border-bottom: 16px solid white;
-                                            position: absolute;
-                                            top: 2725px;
-                                        }
-                                        
-                                        .text-proj1:before {
-                                            content: "";
-                                            display: block;
-                                            border: 16px solid transparent;
-                                            border-bottom: 16px solid white;
-                                            position: absolute;
-                                            top: 3121px;
-                                        }
-                                        
-                                        .text-proj-title {
-                                            font-family: Raleway-Regular;
-                                            font-size: 20px;
-                                            line-height: 1.2;
-                                            font-weight: 500;
-                                            color: #c7b299;
-                                        }
-                                        
-                                        .text-proj-text {
-                                            font-family: Montserrat;
-                                            font-size: 14px;
-                                            line-height: 20px;
-                                            font-weight: 300;
-                                            color: #d1d1d1;
-                                        }
-                                        
-                                        .photo-text:hover .text-proj {
-                                            background-color: #362f2d;
-                                            color: #362f2d;
-                                        }
-                                        
-                                        .photo-text:hover .text-proj1 {
-                                            background-color: #362f2d;
-                                        }
-                                        
-                                        .photo-text:hover .text-proj-title {
-                                            color: white;
-                                        }
-                                        
-                                        .photo-text:hover .text-proj-text {
-                                            color: #c7b299;
-                                        }
-                                        
-                                        .photo-text:hover .text-proj:before {
-                                            border-bottom: 16px solid #362f2d;
-                                        }
-                                        
-                                        .photo-text:hover .text-proj1:before {
-                                            border-bottom: 16px solid #362f2d;
-                                        }
-                                        
-                                        .photo:hover:before {
-                                            content: "";
-                                            background-image: url('https://cdn.icon-icons.com/icons2/1580/PNG/512/2849800-chain-interface-link-linked-multimedia_107961.png');
-                                            background-size: 30px;
-                                            width: 30px;
-                                            height: 30px;
-                                            position: absolute;
-                                            display: block;
-                                            margin: 110px;
-                                        }
-                                        
-                                        .photo:hover:after {
-                                            content: '';
-                                            background-image: url('https://cdn.icon-icons.com/icons2/1143/PNG/512/searchmagnifieroutline_80737.png');
-                                            background-size: 30px;
-                                            width: 30px;
-                                            height: 30px;
-                                            position: absolute;
-                                            display: block;
-                                            margin: -225px 0 0 190px;
-                                        }
-                                        
-                                        .butn-proj {
-                                            display: block;
-                                            width: 170px;
-                                            height: 50px;
-                                            font-family: Raleway-Regular;
-                                            font-size: 14px;
-                                            line-height: 23px;
-                                            font-weight: 800;
-                                            text-transform: uppercase;
-                                            color: #ffffff;
-                                            padding: 15px 10px;
-                                            box-sizing: border-box;
-                                            text-align: center;
-                                            text-decoration: none;
-                                            background-color: #998675;
-                                            word-break: break-all;
-                                            border-radius: 5px;
-                                            margin: 20px 0 0 848px;
-                                        }
-                                        
-                                        .video {
-                                            position: relative;
-                                            width: 1920px;
-                                            box-sizing: border-box;
-                                            height: 705px;
-                                        }
-                                        
-                                        .videotext {
-                                            display: flex;
-                                            flex-direction: column;
-                                            width: 1920px;
-                                            min-height: 300px;
-                                            position: absolute;
-                                            top: 254px;
-                                            box-sizing: border-box;
-                                        }
-                                        
-                                        .video-button {
-                                            width: 100px;
-                                            height: 100px;
-                                            opacity: 0.2;
-                                            background-color: #000000;
-                                            border-radius: 50%;
-                                            text-align: center;
-                                            margin: -44px 0 0 914px;
-                                        }
-                                        
-                                        .video-button:before {
-                                            content: "";
-                                            background-image: url('https://www.markupeasy.ru/projects_p/20200130131950_vv/20200130132035688_Zachetnyi__maket_(2)/10993.png');
-                                            background-size: 70px;
-                                            width: 70px;
-                                            height: 70px;
-                                            display: block;
-                                            opacity: 1;
-                                            margin: -1px 0 0 6px;
-                                        }
-                                        
-                                        .title-video {
-                                            font-family: Raleway-Regular;
-                                            font-size: 30px;
-                                            line-height: 1.2;
-                                            font-weight: 500;
-                                            color: #ffffff;
-                                            text-align: center;
-                                            padding: 30px 0 20px 0;
-                                            letter-spacing: 1px;
-                                        }
-                                        
-                                        .text-video {
-                                            font-family: Montserrat;
-                                            font-size: 16px;
-                                            line-height: 28px;
-                                            font-weight: 300;
-                                            color: #ffffff;
-                                            text-align: center;
-                                            width: 577px;
-                                            margin: 0 0 30px 681px;
-                                        }
-                                        
-                                        .time-video {
-                                            font-family: Montserrat;
-                                            font-size: 14px;
-                                            line-height: 24px;
-                                            font-weight: 400;
-                                            color: #c7b299;
-                                            text-align: center;
-                                        }
+                                            @font-face {
+                                                font-family: "Raleway-Regular";
+                                                src: url("../fonts/raleway/Raleway-Regular.ttf")format("truetype");
+                                                font-style: normal;
+                                                font-weight: normal;
+                                            }
+                                            
+                                            @font-face {
+                                                font-family: "Roboto-Regular";
+                                                src: url("../fonts/roboto/Roboto-Regular.ttf")format("truetype");
+                                                font-style: normal;
+                                                font-weight: normal;
+                                            }
+                                            
+                                            @font-face {
+                                                font-family: "Montserrat";
+                                                src: url("../fonts/montserrat/Montserrat-Regular.ttf")format("truetype");
+                                                font-style: normal;
+                                                font-weight: normal;
+                                            }
+                                            
+                                            body {
+                                                margin: 0 auto;
+                                                width: 1920px;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .container {
+                                                width: 1920px;
+                                                margin: 0 auto;
+                                                border: 1px solid black;
+                                            }
+                                            
+                                            .main-header {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                background-image: url(../img/photo_11982.jpg);
+                                                min-height: 600px;
+                                                width: 1920px;
+                                                background-repeat: no-repeat;
+                                            }
+                                            
+                                            .header-section {
+                                                width: 1920px;
+                                                min-height: 300px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                padding: 30px;
+                                                padding-bottom: 5px;
+                                            }
+                                            
+                                            .header-width {
+                                                width: 100%;
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .logo-name {
+                                                width: 115px;
+                                                height: 42px;
+                                                font-family: Raleway-Regular;
+                                                font-size: 34px;
+                                                line-height: 1.2;
+                                                font-weight: 200;
+                                                letter-spacing: -0.04em;
+                                                color: #ffffff;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            .logo {
+                                                fill: currentColor;
+                                            }
+                                            
+                                            .logo-link {
+                                                display: flex;
+                                                align-items: center;
+                                                height: 44px;
+                                                text-decoration: none;
+                                                color: #fff;
+                                            }
+                                            
+                                            .logo-link:hover {
+                                                color: #998675
+                                            }
+                                            
+                                            .logo-name:hover {
+                                                color: #998675
+                                            }
+                                            
+                                            .logo-link:active {
+                                                color: red
+                                            }
+                                            
+                                            .logo-name:active {
+                                                color: red
+                                            }
+                                            
+                                            .header-nav {
+                                                display: flex;
+                                                height: 200px;
+                                            }
+                                            
+                                            .header-list {
+                                                display: flex;
+                                                margin-left: 219px;
+                                                padding-left: 0px;
+                                            }
+                                            
+                                            .header-list-item {
+                                                min-width: 20px;
+                                                height: 10px;
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 1.2;
+                                                font-weight: 300;
+                                                list-style-type: none;
+                                                margin-right: 30px;
+                                            }
+                                            
+                                            .margin-item {
+                                                margin-right: 0px
+                                            }
+                                            
+                                            .header-list-item a {
+                                                text-decoration: none;
+                                                color: #ffffff;
+                                            }
+                                            
+                                            .header-list-item a:hover {
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .header-list-item a:active {
+                                                color: forestgreen;
+                                            }
+                                            
+                                            .cart {
+                                                margin: 12px 0 0 40px;
+                                                background-image: url(../img/icon_cart_12273.png);
+                                                width: 18px;
+                                                height: 25px;
+                                            }
+                                            
+                                            input[type="search"] {
+                                                width: 30px;
+                                                height: 30px;
+                                                outline: none;
+                                                background-image: url('https://cdn.icon-icons.com/icons2/1143/PNG/512/searchmagnifieroutline_80737.png');
+                                                background-size: contain;
+                                                background-repeat: no-repeat;
+                                                border: none;
+                                                background-color: transparent;
+                                                margin: 10px 0 0 20px;
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 1.2;
+                                                color: white;
+                                            }
+                                            
+                                            input[type="search"]:focus {
+                                                width: 300px;
+                                                transition: width 1s ease-out;
+                                                background-position: right;
+                                                margin: 45px 0 0 0;
+                                            }
+                                            
+                                            .main-header-inf {
+                                                display: flex;
+                                                clear: both;
+                                                flex-direction: row;
+                                                color: #545454
+                                            }
+                                            
+                                            .heade-button-link {}
+                                            
+                                            .slider-arrow-left,
+                                            .slider-arrow-right {
+                                                display: block;
+                                                width: 40px;
+                                                height: 73px;
+                                                position: relative;
+                                            }
+                                            
+                                            .slider-arrow-left:after {
+                                                content: "";
+                                                display: inline-block;
+                                                width: 52px;
+                                                height: 52px;
+                                                border-top: 2px solid #d3c1ad;
+                                                border-left: 2px solid #d3c1ad;
+                                                transform: rotate(-45deg);
+                                                position: absolute;
+                                                top: 226px;
+                                                left: 40px;
+                                            }
+                                            
+                                            .slider-arrow-right:after {
+                                                content: "";
+                                                display: inline-block;
+                                                width: 52px;
+                                                height: 52px;
+                                                border-top: 2px solid #d3c1ad;
+                                                border-left: 2px solid #d3c1ad;
+                                                transform: rotate(135deg);
+                                                position: absolute;
+                                                top: 226px;
+                                                left: 455px;
+                                            }
+                                            
+                                            .slider-arrow-left:hover:after {
+                                                border-top: 2px solid orange;
+                                                border-left: 2px solid orange;
+                                            }
+                                            
+                                            .slider-arrow-left:active:after {
+                                                border-top: 2px solid green;
+                                                border-left: 2px solid green;
+                                            }
+                                            
+                                            .slider-arrow-right:hover:after {
+                                                border-top: 2px solid orange;
+                                                border-left: 2px solid orange;
+                                            }
+                                            
+                                            .slider-arrow-right:active:after {
+                                                border-top: 2px solid green;
+                                                border-left: 2px solid green;
+                                            }
+                                            
+                                            .header-text {
+                                                width: 700px;
+                                                min-height: 300px;
+                                                margin: 130px 0 0 564px;
+                                            }
+                                            
+                                            .header-text-modern {
+                                                display: block;
+                                                width: 100%;
+                                                text-align: center;
+                                                height: 34px;
+                                                font-family: Raleway-Regular;
+                                                font-size: 36px;
+                                                line-height: 1.2;
+                                                font-weight: 300;
+                                                color: #ffffff;
+                                                margin-bottom: 15px
+                                            }
+                                            
+                                            .portfolio-header-text {
+                                                display: block;
+                                                width: 100%;
+                                                text-align: center;
+                                                height: 50px;
+                                                font-family: Raleway-Regular;
+                                                font-size: 52px;
+                                                line-height: 1.2;
+                                                font-weight: 700;
+                                                color: #ffffff;
+                                                letter-spacing: 3px
+                                            }
+                                            
+                                            .text-h5 {
+                                                display: block;
+                                                width: 547px;
+                                                text-align: center;
+                                                height: 39px;
+                                                font-family: Montserrat;
+                                                font-size: 16px;
+                                                line-height: 24px;
+                                                font-weight: 100;
+                                                color: #ffffff;
+                                                margin-top: 25px;
+                                                margin-left: 76px;
+                                                letter-spacing: 1px;
+                                            }
+                                            
+                                            .butn {
+                                                display: block;
+                                                width: 170px;
+                                                min-height: 11px;
+                                                font-family: Raleway-Regular;
+                                                font-size: 14px;
+                                                line-height: 23px;
+                                                font-weight: 800;
+                                                text-transform: uppercase;
+                                                color: #ffffff;
+                                                padding: 15px 10px;
+                                                box-sizing: border-box;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                background-color: #998675;
+                                                word-break: break-all;
+                                                border-radius: 5px;
+                                                margin: 57px 0 0 260px;
+                                            }
+                                            
+                                            .butn:hover {
+                                                background-color: antiquewhite;
+                                                color: black;
+                                            }
+                                            
+                                            .butn:active {
+                                                background-color: rgb(155, 120, 91);
+                                                color: white;
+                                            }
+                                            
+                                            .heade-button-link2 {
+                                                margin: 226px 0 0 352px;
+                                            }
+                                            
+                                            .header-slash {
+                                                width: 180px;
+                                                display: flex;
+                                                margin: 300px 0 51px 892px;
+                                                height: 10px;
+                                            }
+                                            
+                                            .slash-item {
+                                                display: block;
+                                                width: 11px;
+                                                height: 11px;
+                                                background-color: darkgray;
+                                                border-radius: 50%;
+                                                border: 1px solid transparent;
+                                                margin-right: 10px;
+                                            }
+                                            
+                                            .slash-item:hover {
+                                                background-color: transparent;
+                                                border: 2px solid #998675;
+                                                transform: scale(1.2);
+                                            }
+                                            
+                                            .slash-item:active {
+                                                background-color: transparent;
+                                                border: 2px solid green;
+                                                transform: scale(1.1);
+                                            }
+                                            
+                                            .web-app {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: center;
+                                                width: 1920px;
+                                                padding: 30px;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .app {
+                                                display: flex;
+                                                justify-content: center;
+                                                background-color: white;
+                                            }
+                                            
+                                            .pencil {
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 260px;
+                                                height: 200px;
+                                                clear: both;
+                                                margin-right: 80px;
+                                            }
+                                            
+                                            .pencil:after {
+                                                content: "";
+                                                display: block;
+                                                width: 70px;
+                                                height: 3px;
+                                                background-color: #f1eee9;
+                                                margin: 0 auto;
+                                                align-self: flex-end;
+                                            }
+                                            
+                                            .pencil:hover:after {
+                                                background-color: #c7b299;
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .pencil:hover span,
+                                            .pencil:hover svg {
+                                                color: #c7b299;
+                                                fill: #c7b299
+                                            }
+                                            
+                                            .pencil:hover p {
+                                                color: #8c8c8c;
+                                            }
+                                            
+                                            .pen {
+                                                fill: #555555;
+                                                width: 51px;
+                                                height: 51px;
+                                                margin: 0 0px 0 107px;
+                                            }
+                                            
+                                            .webapp {
+                                                display: block;
+                                                font-family: Raleway-Regular;
+                                                font-size: 22px;
+                                                line-height: 1.2;
+                                                font-weight: 600;
+                                                color: #555555;
+                                                margin: 15px 0px 15px 0px;
+                                                text-align: center;
+                                            }
+                                            
+                                            .webapp-text {
+                                                display: block;
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 24px;
+                                                font-weight: 300;
+                                                color: #8c8c8c;
+                                                text-align: center;
+                                                height: 86px;
+                                                margin: 0;
+                                            }
+                                            
+                                            .waxom {
+                                                display: flex;
+                                                width: 1920px;
+                                                height: 740px;
+                                                background-color: #fbfaf8;
+                                                padding: 30px;
+                                                box-sizing: border-box;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .waxom-text,
+                                            .projects-text,
+                                            .recent-text {
+                                                text-align: center;
+                                                width: 100%;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .waxom-title,
+                                            .projects-title,
+                                            .recent-title {
+                                                font-family: Raleway-Regular;
+                                                font-size: 30px;
+                                                line-height: 1.2;
+                                                font-weight: 600;
+                                                color: #555555;
+                                                padding-top: 50px;
+                                                margin-bottom: 30px;
+                                                display: block;
+                                                text-align: center;
+                                            }
+                                            
+                                            .waxom-after-title,
+                                            .projects-after-title,
+                                            .recent-after-title {
+                                                font-family: Montserrat;
+                                                font-size: 16px;
+                                                line-height: 28px;
+                                                font-weight: 300;
+                                                color: #8c8c8c;
+                                                display: block;
+                                                text-align: center;
+                                                width: 779px;
+                                                margin: 0px 0 0 542px;
+                                            }
+                                            
+                                            .three-img {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: center;
+                                                top: -1487px;
+                                                width: 1920px;
+                                                position: relative;
+                                            }
+                                            
+                                            .img-one {
+                                                position: absolute;
+                                                top: 1545px;
+                                            }
+                                            
+                                            .img-two {
+                                                position: absolute;
+                                                left: 347px;
+                                                top: 1627px;
+                                            }
+                                            
+                                            .img-three {
+                                                position: absolute;
+                                                left: 810px;
+                                                top: 1627px;
+                                            }
+                                            
+                                            .img-two:hover {
+                                                z-index: 1000;
+                                            }
+                                            
+                                            .img-three:hover {
+                                                z-index: 1000;
+                                            }
+                                            
+                                            .aside-menu {
+                                                display: flex;
+                                                flex-direction: row;
+                                                width: 1920px;
+                                                box-sizing: border-box;
+                                                min-height: 150px;
+                                                background: linear-gradient(to right, #211b19, #4d3326);
+                                            }
+                                            
+                                            .aside-list {
+                                                display: flex;
+                                                width: 30%;
+                                                margin: 48px 0 0 325px;
+                                            }
+                                            
+                                            .aside-list-item {
+                                                font-family: Raleway-Regular;
+                                                font-size: 28px;
+                                                line-height: 1.2;
+                                                font-weight: 400;
+                                                color: #ffffff;
+                                                padding-left: 10px;
+                                            }
+                                            
+                                            .aside-list-item-url {
+                                                text-decoration: none;
+                                                color: white;
+                                            }
+                                            
+                                            .aside-list-item-url:hover {
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .aside-title-text {
+                                                display: block;
+                                                font-family: Montserrat;
+                                                font-size: 18px;
+                                                line-height: 1.2;
+                                                font-weight: 300;
+                                                color: #615855;
+                                                margin: 8px 0 0 375px;
+                                            }
+                                            
+                                            .butn-aside {
+                                                display: block;
+                                                width: 170px;
+                                                height: 50px;
+                                                font-family: Raleway-Regular;
+                                                font-size: 14px;
+                                                line-height: 23px;
+                                                font-weight: 800;
+                                                text-transform: uppercase;
+                                                color: #ffffff;
+                                                padding: 15px 10px;
+                                                box-sizing: border-box;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                background-color: #998675;
+                                                word-break: break-all;
+                                                border-radius: 5px;
+                                                margin: 57px 0 0 468px;
+                                            }
+                                            
+                                            .butn-aside:hover,
+                                            .butn-proj:hover {
+                                                background-color: aqua;
+                                                color: black;
+                                            }
+                                            
+                                            .butn-aside:active,
+                                            .butn-proj:active {
+                                                background-color: beige;
+                                                color: brown;
+                                            }
+                                            
+                                            .projects {
+                                                display: flex;
+                                                width: 1920px;
+                                                min-height: 740px;
+                                                padding: 30px;
+                                                box-sizing: border-box;
+                                                flex-direction: column;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .projects-buttons {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: center;
+                                                box-sizing: border-box;
+                                                margin: 40px 0 40px 0;
+                                            }
+                                            
+                                            .proj-btn {
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 21px;
+                                                font-weight: 300;
+                                                color: #8c8c8c;
+                                                width: 120px;
+                                                height: 32px;
+                                                border: 1.0px solid #ebebeb;
+                                                border-radius: 3.0px;
+                                                margin-right: 10px;
+                                            }
+                                            
+                                            .proj-btn:hover {
+                                                background-color: #998675;
+                                                color: white;
+                                                outline: none;
+                                            }
+                                            
+                                            .proj-btn:focus {
+                                                background-color: #998675;
+                                                color: white;
+                                                outline: none;
+                                            }
+                                            
+                                            .proj-btn:active {
+                                                background-color: #998675;
+                                                color: lawngreen;
+                                            }
+                                            
+                                            .project-images {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .photo-text {
+                                                display: flex;
+                                                flex-direction: column;
+                                                padding: 30px;
+                                            }
+                                            
+                                            .text-proj {
+                                                width: 370px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 370px;
+                                                height: 100px;
+                                                background-color: #fbfaf8;
+                                                margin-top: -5px;
+                                                box-sizing: border-box;
+                                                padding: 30px;
+                                            }
+                                            
+                                            .text-proj1 {
+                                                width: 370px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 370px;
+                                                height: 100px;
+                                                background-color: #fbfaf8;
+                                                margin-top: -5px;
+                                                box-sizing: border-box;
+                                                padding: 30px;
+                                            }
+                                            
+                                            .text-proj:before {
+                                                content: "";
+                                                display: block;
+                                                border: 16px solid transparent;
+                                                border-bottom: 16px solid white;
+                                                position: absolute;
+                                                top: 2725px;
+                                            }
+                                            
+                                            .text-proj1:before {
+                                                content: "";
+                                                display: block;
+                                                border: 16px solid transparent;
+                                                border-bottom: 16px solid white;
+                                                position: absolute;
+                                                top: 3121px;
+                                            }
+                                            
+                                            .text-proj-title {
+                                                font-family: Raleway-Regular;
+                                                font-size: 20px;
+                                                line-height: 1.2;
+                                                font-weight: 500;
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .text-proj-text {
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                color: #d1d1d1;
+                                            }
+                                            
+                                            .photo-text:hover .text-proj {
+                                                background-color: #362f2d;
+                                                color: #362f2d;
+                                            }
+                                            
+                                            .photo-text:hover .text-proj1 {
+                                                background-color: #362f2d;
+                                            }
+                                            
+                                            .photo-text:hover .text-proj-title {
+                                                color: white;
+                                            }
+                                            
+                                            .photo-text:hover .text-proj-text {
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .photo-text:hover .text-proj:before {
+                                                border-bottom: 16px solid #362f2d;
+                                            }
+                                            
+                                            .photo-text:hover .text-proj1:before {
+                                                border-bottom: 16px solid #362f2d;
+                                            }
+                                            
+                                            .photo:hover:before {
+                                                content: "";
+                                                background-image: url('https://cdn.icon-icons.com/icons2/1580/PNG/512/2849800-chain-interface-link-linked-multimedia_107961.png');
+                                                background-size: 30px;
+                                                width: 30px;
+                                                height: 30px;
+                                                position: absolute;
+                                                display: block;
+                                                margin: 110px;
+                                            }
+                                            
+                                            .photo:hover:after {
+                                                content: '';
+                                                background-image: url('https://cdn.icon-icons.com/icons2/1143/PNG/512/searchmagnifieroutline_80737.png');
+                                                background-size: 30px;
+                                                width: 30px;
+                                                height: 30px;
+                                                position: absolute;
+                                                display: block;
+                                                margin: -225px 0 0 190px;
+                                            }
+                                            
+                                            .butn-proj {
+                                                display: block;
+                                                width: 170px;
+                                                height: 50px;
+                                                font-family: Raleway-Regular;
+                                                font-size: 14px;
+                                                line-height: 23px;
+                                                font-weight: 800;
+                                                text-transform: uppercase;
+                                                color: #ffffff;
+                                                padding: 15px 10px;
+                                                box-sizing: border-box;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                background-color: #998675;
+                                                word-break: break-all;
+                                                border-radius: 5px;
+                                                margin: 20px 0 0 848px;
+                                            }
+                                            
+                                            .video {
+                                                position: relative;
+                                                width: 1920px;
+                                                box-sizing: border-box;
+                                                height: 705px;
+                                            }
+                                            
+                                            .videotext {
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 1920px;
+                                                min-height: 300px;
+                                                position: absolute;
+                                                top: 254px;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .video-button {
+                                                width: 100px;
+                                                height: 100px;
+                                                opacity: 0.2;
+                                                background-color: #000000;
+                                                border-radius: 50%;
+                                                text-align: center;
+                                                margin: -44px 0 0 914px;
+                                            }
+                                            
+                                            .video-button:before {
+                                                content: "";
+                                                background-image: url('https://www.markupeasy.ru/projects_p/20200130131950_vv/20200130132035688_Zachetnyi__maket_(2)/10993.png');
+                                                background-size: 70px;
+                                                width: 70px;
+                                                height: 70px;
+                                                display: block;
+                                                opacity: 1;
+                                                margin: -1px 0 0 6px;
+                                            }
+                                            
+                                            .video-button:hover {
+                                                opacity: 1;
+                                                background-color: transparent;
+                                            }
+                                            
+                                            .video-button:active {
+                                                background-color: skyblue;
+                                            }
+                                            
+                                            .title-video {
+                                                font-family: Raleway-Regular;
+                                                font-size: 30px;
+                                                line-height: 1.2;
+                                                font-weight: 500;
+                                                color: #ffffff;
+                                                text-align: center;
+                                                padding: 30px 0 20px 0;
+                                                letter-spacing: 1px;
+                                            }
+                                            
+                                            .text-video {
+                                                font-family: Montserrat;
+                                                font-size: 16px;
+                                                line-height: 28px;
+                                                font-weight: 300;
+                                                color: #ffffff;
+                                                text-align: center;
+                                                width: 577px;
+                                                margin: 0 0 30px 681px;
+                                            }
+                                            
+                                            .time-video {
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 24px;
+                                                font-weight: 400;
+                                                color: #c7b299;
+                                                text-align: center;
+                                            }
+                                            
+                                            .phone-device {
+                                                display: flex;
+                                                justify-content: center;
+                                                width: 1920px;
+                                                box-sizing: border-box;
+                                                padding-top: 80px;
+                                                height: 696px
+                                            }
+                                            
+                                            .title-device-phone {
+                                                font-family: Raleway-Regular;
+                                                font-size: 30px;
+                                                line-height: 1.2;
+                                                font-weight: 600;
+                                                color: #555555;
+                                                margin-top: 110px;
+                                                display: block;
+                                            }
+                                            
+                                            .device-phone-text {
+                                                font-family: Montserrat;
+                                                font-size: 16px;
+                                                line-height: 28px;
+                                                font-weight: 300;
+                                                color: #8c8c8c;
+                                                width: 672px;
+                                                margin-top: 40px;
+                                            }
+                                            
+                                            .device-text-list {
+                                                display: block;
+                                                margin-top: 50px;
+                                                padding-inline-start: 96px;
+                                            }
+                                            
+                                            .device-text-list-item {
+                                                font-family: Montserrat;
+                                                font-size: 16px;
+                                                line-height: 32px;
+                                                font-weight: 300;
+                                                color: #8c8c8c;
+                                                list-style-type: none;
+                                                position: relative;
+                                            }
+                                            
+                                            .device-text-list-item:before {
+                                                content: '';
+                                                background-image: url(../img/0ffffdfd.png);
+                                                position: absolute;
+                                                display: block;
+                                                width: 21px;
+                                                height: 21px;
+                                                left: -41px
+                                            }
+                                            
+                                            .numbers {
+                                                display: flex;
+                                                justify-content: center;
+                                                width: 1920px;
+                                                box-sizing: border-box;
+                                                background: linear-gradient(to right, #211b19, #4d3326);
+                                                min-height: 100px;
+                                            }
+                                            
+                                            .numbers1 {
+                                                display: flex;
+                                                flex-direction: column;
+                                                height: 200px;
+                                                padding: 68px 70px 46px 64px;
+                                            }
+                                            
+                                            .numbers1:after {
+                                                content: "";
+                                                display: block;
+                                                width: 30px;
+                                                height: 3px;
+                                                background-color: #f1eee9;
+                                                margin: 22px auto;
+                                                align-self: flex-end;
+                                            }
+                                            
+                                            .people-numbers {
+                                                text-align: center;
+                                                fill: #c7b299;
+                                                margin: 0 0 0 50px;
+                                            }
+                                            
+                                            .cofee-numbers {
+                                                text-align: center;
+                                                fill: #c7b299;
+                                                margin: 0 0 0 42px;
+                                            }
+                                            
+                                            .mess {
+                                                text-align: center;
+                                                fill: #c7b299;
+                                                margin: 0 0 0 40px;
+                                            }
+                                            
+                                            .heart {
+                                                text-align: center;
+                                                fill: #c7b299;
+                                                margin: 0 0 0 21px;
+                                            }
+                                            
+                                            .food {
+                                                text-align: center;
+                                                fill: #c7b299;
+                                                margin: 0 0 0 28px;
+                                            }
+                                            
+                                            .numbers-number {
+                                                font-family: Montserrat;
+                                                font-size: 48px;
+                                                line-height: 36px;
+                                                font-weight: 200;
+                                                color: #ffffff;
+                                                text-align: center;
+                                                margin: 30px 0 21px 0;
+                                            }
+                                            
+                                            .numbers-text {
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                text-transform: uppercase;
+                                                color: #c7b299;
+                                                justify-content: center;
+                                                text-align: center;
+                                            }
+                                            
+                                            .recent {
+                                                display: flex;
+                                                width: 1920px;
+                                                min-height: 540px;
+                                                padding: 30px;
+                                                box-sizing: border-box;
+                                                flex-direction: column;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .photo1recent {
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .recent-photos {
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                margin: 40px 30px 30px 0px;
+                                            }
+                                            
+                                            .square {
+                                                width: 50px;
+                                                height: 35px;
+                                                background-color: #363636;
+                                                border-radius: 3.0px 3.0px 0.0px 0.0px;
+                                                display: block;
+                                                margin: 20px;
+                                            }
+                                            
+                                            .suare-text {
+                                                font-family: Montserrat;
+                                                font-size: 24px;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                color: #ffffff;
+                                                text-align: center;
+                                                padding: 7px 5px 7px 5px;
+                                                display: block;
+                                            }
+                                            
+                                            .mini-square {
+                                                width: 50px;
+                                                height: 25px;
+                                                background-color: #252525;
+                                                border-radius: 0.0px 0.0px 3.0px 3.0px;
+                                            }
+                                            
+                                            .mini-square-text {
+                                                font-family: Roboto-Regular;
+                                                font-size: 12px;
+                                                line-height: 20px;
+                                                font-weight: 400;
+                                                color: #ffffff;
+                                                display: block;
+                                                text-align: center;
+                                            }
+                                            
+                                            .photo1,
+                                            .photo2,
+                                            .photo3 {
+                                                display: block;
+                                                background-image: url(../img/photo_11640.png);
+                                                width: 370px;
+                                                height: 220px;
+                                            }
+                                            
+                                            .photo2 {
+                                                background-image: url(../img/photo_13444444.png);
+                                            }
+                                            
+                                            .photo3 {
+                                                background-image: url(../img/photo_1555555.png);
+                                            }
+                                            
+                                            .photo1-text {
+                                                display: flex;
+                                                flex-direction: column;
+                                                padding: 30px 45px 30px 30px;
+                                                width: 370px;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .photo1-title {
+                                                font-family: Raleway-Regular;
+                                                font-size: 20px;
+                                                line-height: 1.2;
+                                                font-weight: 600;
+                                                color: #555555;
+                                            }
+                                            
+                                            .photo1-title-text {
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 22px;
+                                                font-weight: 300;
+                                                color: #8c8c8c;
+                                                width: 350px;
+                                                margin: 20px 0 20px 0;
+                                            }
+                                            
+                                            .photo1-link {
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                font-weight: 500;
+                                                color: #c7b299;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            .marginslash {
+                                                margin: 127px 72px 0px 136px;
+                                                opacity: 0.5;
+                                            }
+                                            
+                                            .recent-photos:hover .photo1-text {
+                                                background-color: #362f2d;
+                                            }
+                                            
+                                            .recent-photos:hover .photo1-title {
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .recent-photos:hover .photo1-title-text {
+                                                color: white;
+                                            }
+                                            
+                                            .recent-photos:hover .square {
+                                                background-color: #c7b299;
+                                            }
+                                            
+                                            .recent-photos:hover .mini-square {
+                                                background-color: #a48d72;
+                                            }
+                                            
+                                            .recent-slash {
+                                                width: 1920px;
+                                                text-align: center;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .left {
+                                                border-radius: 50%;
+                                                width: 22px;
+                                                height: 22px;
+                                                background-color: transparent;
+                                                color: #d1d1d1;
+                                                border: 1px solid #d1d1d1;
+                                            }
+                                            
+                                            .left:focus {
+                                                color: #a48d72;
+                                                outline: none;
+                                                border: 1px solid #a48d72
+                                            }
+                                            
+                                            .commercials {
+                                                display: flex;
+                                                flex: row;
+                                                justify-content: center;
+                                                width: 1920px;
+                                                min-height: 489px;
+                                                box-sizing: border-box;
+                                                background-image: url(../img/photo_11592_aside.png);
+                                            }
+                                            
+                                            .links {
+                                                width: 1920px;
+                                                min-height: 489px;
+                                                box-sizing: border-box;
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: space-evenly;
+                                                padding: 177px;
+                                                padding-bottom: 0px;
+                                            }
+                                            
+                                            .link1 {
+                                                background-image: url(../img/link1.png);
+                                                width: 210px;
+                                                height: 127px;
+                                                margin-top: 45px;
+                                            }
+                                            
+                                            .link2 {
+                                                background-image: url(../img/link2.png);
+                                                width: 210px;
+                                                height: 210px;
+                                            }
+                                            
+                                            .link3 {
+                                                background-image: url(../img/link3.png);
+                                                width: 210px;
+                                                height: 130px;
+                                                margin-top: 33px;
+                                            }
+                                            
+                                            .link4 {
+                                                background-image: url(../img/link4.png);
+                                                width: 210px;
+                                                height: 164px;
+                                                margin-top: 30px;
+                                            }
+                                            
+                                            .main-footer {
+                                                width: 1920px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                box-sizing: border-box;
+                                                background-color: #191919;
+                                                min-height: 500px;
+                                            }
+                                            
+                                            .footer-text {
+                                                display: flex;
+                                                flex-direction: row;
+                                                width: 1920px;
+                                                box-sizing: border-box;
+                                                padding: 80px 300px 80px 300px;
+                                            }
+                                            
+                                            .footer-read {
+                                                display: flex;
+                                                flex-direction: column;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .footer-text-text {
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 24px;
+                                                font-weight: 300;
+                                                color: #555555;
+                                                width: 263px;
+                                                margin-top: 30px;
+                                                margin-bottom: 20px;
+                                            }
+                                            
+                                            .link-link {
+                                                color: white;
+                                            }
+                                            
+                                            .footer-posts,
+                                            .fotter-twitter {
+                                                display: flex;
+                                                flex-direction: column;
+                                                box-sizing: border-box;
+                                                width: 250px;
+                                                margin: -0px 44px 0 74px;
+                                            }
+                                            
+                                            .posts-title,
+                                            .twitter-title,
+                                            .footer-img-title {
+                                                font-family: Raleway-Regular;
+                                                font-size: 24px;
+                                                line-height: 1.2;
+                                                font-weight: 700;
+                                                color: #ffffff;
+                                                margin-bottom: 20px;
+                                            }
+                                            
+                                            .posts-data {
+                                                font-family: Montserrat;
+                                                font-size: 12px;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                color: #363636;
+                                                margin-bottom: 0px;
+                                                margin-top: 0px;
+                                            }
+                                            
+                                            .post-text,
+                                            .post-text1 {
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                color: #555555;
+                                                margin-bottom: 0px;
+                                                margin-top: 0px;
+                                                width: 270px;
+                                            }
+                                            
+                                            .post-text:after {
+                                                content: "";
+                                                display: block;
+                                                width: 270px;
+                                                height: 2px;
+                                                background-color: #252525;
+                                                margin: 18px 0 18px 0;
+                                                align-self: flex-end;
+                                            }
+                                            
+                                            .post-hover1:hover .posts-data {
+                                                color: white;
+                                            }
+                                            
+                                            .post-hover1:hover .post-text {
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .post-hover2:hover .posts-data {
+                                                color: white;
+                                            }
+                                            
+                                            .post-hover2:hover .post-text {
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .post-hover3:hover .posts-data {
+                                                color: white;
+                                            }
+                                            
+                                            .post-hover3:hover .post-text1 {
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .twitter-text {
+                                                font-family: Montserrat;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                color: #555555;
+                                                width: 270px;
+                                            }
+                                            
+                                            .twitter-link {
+                                                text-decoration: none;
+                                                color: #00bff3
+                                            }
+                                            
+                                            .twitter-time,
+                                            .twitter-time1 {
+                                                font-family: Montserrat;
+                                                font-size: 12px;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                color: #363636;
+                                            }
+                                            
+                                            .twitter-time:after {
+                                                content: "";
+                                                display: block;
+                                                width: 270px;
+                                                height: 2px;
+                                                background-color: #252525;
+                                                margin: 18px 0 18px 0;
+                                                align-self: flex-end;
+                                            }
+                                            
+                                            .link-twit {
+                                                text-decoration: none;
+                                                color: #959595;
+                                            }
+                                            
+                                            .footer-img {
+                                                margin-left: 35px;
+                                            }
+                                            
+                                            .img-img {
+                                                display: flex;
+                                                flex-direction: row;
+                                                width: 300px;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .img-img2 {
+                                                display: flex;
+                                                flex-direction: row;
+                                                width: 300px;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .img1 {
+                                                background-image: url(../img/01.png);
+                                                width: 130px;
+                                                height: 98px;
+                                                margin: 0px 10px 10px 0;
+                                            }
+                                            
+                                            .img2 {
+                                                background-image: url(../img/02.png);
+                                                width: 130px;
+                                                height: 98px;
+                                            }
+                                            
+                                            .img3 {
+                                                background-image: url(../img/03.png);
+                                                width: 130px;
+                                                height: 98px;
+                                                margin: 0 10px 0px 0px;
+                                            }
+                                            
+                                            .img4 {
+                                                background-image: url(../img/04.png);
+                                                width: 130px;
+                                                height: 98px;
+                                            }
+                                            
+                                            .copyright {
+                                                display: flex;
+                                                flex-direction: row;
+                                                width: 1920px;
+                                                box-sizing: border-box;
+                                                min-height: 111px;
+                                                background-color: #111111;
+                                                color: #555555;
+                                            }
+                                            
+                                            .left-copy {
+                                                margin: 45px 210px 52px 295px;
+                                                display: flex;
+                                                flex-direction: row;
+                                            }
+                                            
+                                            .copy {
+                                                font-family: Montserrat;
+                                                font-size: 13px;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                color: #555555;
+                                                padding-right: 10px;
+                                            }
+                                            
+                                            .wax {
+                                                color: #959595;
+                                                padding-right: 10px;
+                                            }
+                                            
+                                            .wax1 {
+                                                color: #959595;
+                                            }
+                                            
+                                            .wax1:hover {
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .wax1:active {
+                                                color: goldenrod;
+                                            }
+                                            
+                                            .privacy,
+                                            .faq,
+                                            .support {
+                                                font-family: Montserrat;
+                                                font-size: 13px;
+                                                text-decoration: none;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                color: #555555;
+                                                padding: 0 10px 0 10px;
+                                            }
+                                            
+                                            .privacy {
+                                                padding-left: 0px;
+                                            }
+                                            
+                                            .privacy:hover,
+                                            .faq:hover,
+                                            .support:hover {
+                                                color: #c7b299;
+                                            }
+                                            
+                                            .privacy:active,
+                                            .faq:active,
+                                            .support:active {
+                                                color: goldenrod;
+                                            }
+                                            
+                                            .right-copy {
+                                                font-family: Montserrat;
+                                                font-size: 13px;
+                                                line-height: 20px;
+                                                font-weight: 300;
+                                                color: #555555;
+                                                margin: 45px 0 52px 346px;
+                                                display: flex;
+                                                flex-direction: row;
+                                            }
+                                            
+                                            .design,
+                                            .market {
+                                                padding: 0 10px 0 10px;
+                                                text-decoration: none;
+                                                color: #555555;
+                                            }
